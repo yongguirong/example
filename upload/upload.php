@@ -56,10 +56,10 @@ if (is_uploaded_file($_FILES['myfile']['tmp_name'])) {
 
 if (($filetype=="image/gif")||($filetype=="image/pjpeg"))
 {
-//如果是图形文件格式则显之
-echo "<p><img src='";
-echo $moveto;
-echo "'height=150 width=150 align=center border=0>";
+    //如果是图形文件格式则显之
+    echo "<p><img src='";
+    echo $moveto;
+    echo "'height=150 width=150 align=center border=0>";
 }
 
 ?>
