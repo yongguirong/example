@@ -85,7 +85,8 @@ foreach($data as $v){
 } 
 
 $valueStr = rtrim($valueStr,',');
-$sql = "INSERT into `td_list`(id,name) values $valueStr";
+$insertSql = "INSERT into `td_list`(id,name) values $valueStr";
+mysql_query($insertSql);
 */
 
  ?>
