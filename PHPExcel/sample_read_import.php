@@ -78,6 +78,14 @@ function excelImport($file) {
   print_r($data);
   echo "</pre>";
 
+/*
+*以下是导入数据库的示例代码
+foreach($data as $v){
+    $valueStr .= "(".$v['id'].",'".$v['name']."'),";
+} 
 
+$valueStr = rtrim($valueStr,',');
+$sql = "INSERT into `td_list`(id,name) values $valueStr";
+*/
 
  ?>
